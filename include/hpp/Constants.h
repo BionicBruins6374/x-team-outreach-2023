@@ -11,7 +11,7 @@ namespace constants {
 	constexpr int CRANE_LEFT = 5;
 	constexpr int CRANE_RIGHT = 6;
 
-	constexpr int SPEED = 10; // ???
+	constexpr int SPEED = 20; // ???
 }
 
 #endif // CONSTANTS_H

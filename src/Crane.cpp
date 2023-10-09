@@ -8,7 +8,7 @@ void Crane::move_velocity(bool up, int speed) {
 	const int T_THRESHOLD = 100; // experiment :pray:
 	const int B_THRESHOLD = 0; // experiment :pray:
 
-	if (pos < B_THRESHOLD || pos >= T_THRESHOLD) return; // clamp position
+	//if (pos < B_THRESHOLD || pos >= T_THRESHOLD) return; // clamp position
 
 	left_motor.move_velocity(speed);
 	right_motor.move_velocity(speed);

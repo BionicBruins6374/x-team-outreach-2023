@@ -5,8 +5,6 @@
 #ifndef DRIVETRAIN_H
 #define DRIVETRAIN_H
 
-enum Side { left, right };
-
 class Drivetrain {
 	private:
 		int left_front, left_back; // Left Forward, Backward
@@ -16,9 +14,9 @@ class Drivetrain {
 		Drivetrain(int lf, int lb, int rf, int rb);
 
 		Drivetrain() 
-			: Drivetrain(constants::LEFT_FORWARD, constants::LEFT_BACKWARD, constants::RIGHT_FORWARD, constants::RIGHT_FORWARD) {}
+			: Drivetrain(constants::LEFT_FORWARD, constants::LEFT_BACKWARD, constants::RIGHT_FORWARD, constants::RIGHT_BACKWARD) {}
 
-		void move_velocity(Side side, const int velocity);
+		void move_velocity(bool left, const int velocity);
 
 		void handle(pros::Controller controller);
 };

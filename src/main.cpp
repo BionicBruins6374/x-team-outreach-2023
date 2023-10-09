@@ -41,8 +41,6 @@ void opcontrol() {
 			crane.move_velocity(true, constants::SPEED);
 		} else if (master.get_digital(DIGITAL_R2)) {
 			crane.move_velocity(false, constants::SPEED);
-		} else {
-			crane.cancel_velocity();
 		}
  
 		pros::delay(20);
